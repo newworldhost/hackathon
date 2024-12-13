@@ -24,7 +24,7 @@
     
     .container { 
     text-align: center;
-    margin-top: 96px;
+    margin-top: 20px;
     max-width:900px;
     padding:15px;
     
@@ -32,7 +32,7 @@
     } 
     body { 
     background-color: black;
-    background-image:url('https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-image:url('https://img.freepik.com/free-vector/black-hex-pattern-background-gradient_78370-3427.jpg?ga=GA1.1.601149718.1734101537&semt=ais_hybrid');
     background-repeat:none;
     background-attachment:fixed;
     background-size:cover;
@@ -54,4 +54,7 @@
     }
     .fa-brands:before, .fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before {
         color:gold;
+    }
+    p#result, p#add-word-result {
+        color:white;
     }

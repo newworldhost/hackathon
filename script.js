@@ -14,31 +14,63 @@ function shuffle(word) {
 function loadGame() {
 	currentWord = words[Math.floor(Math.random() * words.length)];
 	scrambledWord = shuffle(currentWord);
+	console.log(scrambledWord)
 	document.getElementById('scrambled-word').textContent = scrambledWord;
 }
-/**
-* this function is checking if the guess is the correct word
-*/
-function checkGuess() {
-	const guess = document.getElementById('guess-input').value;
-	if (guess === currentWord) {
-		document.getElementById('result').textContent = 'Correct';
-	} else {
-		document.getElementById('result').textContent = 'Try Again';
-	}
-}
+
+
 /**
 * this function is for users to add a new word tothe array
 */
 
+// Function to add a new word
 function addWord() {
-	const newWord = document.getElementById('new-word-input').value;
-	if (newWord.trim());
-	words.push(newWord.trim())
-	document.getElementById('new-word-input').value = '';
-	document.getElementById('add-word-result').textContent = 'Word Added';
-} else {
-	document.getElementById('add-word-result').textContent = 'Please enter a valid word';
+    const newWord = document.getElementById('new-word-input').value.trim();
+    if (newWord) {
+        if (!words.includes(newWord)) {
+            words.push(newWord);
+            document.getElementById('new-word-input').value = '';
+            document.getElementById('add-word-result').textContent = 'Word Added';
+        } else {
+            document.getElementById('add-word-result').textContent = 'Word already exists';
+        }
+    } else {
+        document.getElementById('add-word-result').textContent = 'Please enter a valid word';
+    }
+}
+
+// Add event listener for pressing enter to submit a new word
+document.getElementById('new-word-input').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        addWord();
+    }
+});
+
+
+
+
+/**
+ * this is so the user can press enter to submit a guess
+ */
+document.getElementById('guess-input').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        checkGuess();
+    }
+});
+/**
+* this function is checking if the guess is the correct word
+*/
+function checkGuess() {
+    const guess = document.getElementById('guess-input').value;
+    if (guess === currentWord) {
+        document.getElementById('result').textContent = 'Correct';
+        loadGame(); // Load a new word when the guess is correct
+    } else {
+        document.getElementById('result').textContent = 'Try Again';
+    }
+    document.getElementById('guess-input').value = ''; // Clear the input field
 }
 // Ensure the game loads when the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', loadGame);
+
+
