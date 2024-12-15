@@ -58,3 +58,12 @@
     p#result, p#add-word-result {
         color:white;
     }
+#guess-input, #new-word-input  {
+    background-color:black;
+    border:2px red outset;
+    color:white;
+}
+button:hover {
+    background-color: rgb(7, 7, 7);
+    color: white;
+}
