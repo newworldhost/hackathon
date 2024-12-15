@@ -3,6 +3,7 @@ body {
     background-image:url('games.png');
     background-repeat:no-repeat;
     background-size:cover;
+    background-attachment:fixed;
 }
 a {
     text-decoration: none;
@@ -37,6 +38,7 @@ nav ul {
 footer {
     text-align:center;
     width:100%;
+    margin-bottom:-3px;
 
 }
 
@@ -52,5 +54,9 @@ h1, p {
     padding:15px;
     font-weight: bolder;
     text-align:center;
+    margin-bottom:-3px;
 
+}
+.lead {
+    margin-top:109px;
 }
