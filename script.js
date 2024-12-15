@@ -28,7 +28,7 @@ function loadGame() {
 // Function to add a new word
 function addWord() {
     const newWord = document.getElementById('new-word-input').value.trim();
-    const isValidWord = /^[a-zA-Z]+$/.test(newWord) && !/(.).*?\1/.test(newWord); // Check if the word contains only letters and no repeated characters
+    const isValidWord = /^[a-zA-Z]+$/.test(newWord) && !/(.).*?\1{2}/.test(newWord); // Check if the word contains only letters and no more than two repeated characters
     if (newWord && isValidWord) {
         if (!words.includes(newWord)) {
             words.push(newWord);
