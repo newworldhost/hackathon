@@ -35,6 +35,9 @@ function addWord() {
             localStorage.setItem('words', JSON.stringify(words)); // Save updated words array to local storage
             document.getElementById('new-word-input').value = '';
             document.getElementById('add-word-result').textContent = 'Word Added';
+            setTimeout(() => {
+                document.getElementById('add-word-result').textContent = '';
+            }, 2000); // Clear the message after 2 seconds
         } else {
             document.getElementById('add-word-result').textContent = 'Word already exists';
         }
