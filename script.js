@@ -71,9 +71,15 @@ function checkGuess() {
     const guess = document.getElementById('guess-input').value;
     if (guess === currentWord) {
         document.getElementById('result').textContent = 'Correct';
+        setTimeout(() => {
+            document.getElementById('result').textContent = '';
+        }, 2000); // Clear the message after 2 seconds
         loadGame(); // Load a new word when the guess is correct
-    } else {
+        } else {
         document.getElementById('result').textContent = 'Try Again';
+        setTimeout(() => {
+            document.getElementById('result').textContent = '';
+        }, 2000); // Clear the message after 2 seconds
     }
     document.getElementById('guess-input').value = ''; // Clear the input field
 }
