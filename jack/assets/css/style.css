@@ -1,0 +1,310 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Body */
+body {
+    background-color: palegoldenrod;
+    font-family: "Lato";
+}
+
+/* Weather App Container */
+#weatherApp {
+    display: none;
+}
+
+/* Weather Report Container */
+#weatherOutput {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Weather Cards */
+.weather-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* Main Header Styling */
+.weather-card h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Condition and Temperature */
+.weather-card p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Weather Icons */
+.weather-card img {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+/* Weather Cards for Temperature */
+.weather-card .temperature {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+/* Add a background color based on weather condition */
+.sunny {
+    background-color: #ffe0b2;
+}
+
+.cloudy {
+    background-color: #cfd8dc;
+}
+
+.rainy {
+    background-color: #b3e5fc;
+}
+
+.snowy {
+    background-color: #e1f5fe;
+}
+
+/* Add fade-in effect */
+.weather-card.show {
+    opacity: 1;
+}
+
+/* Show the weather output */
+.weather-card.show {
+    display: block;
+}
+
+/* Map Styling */
+#staticMap {
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+}
+
+/* Styling for input field and buttons */
+input.form-control {
+    border-radius: 5px;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Styling for buttons */
+button {
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Custom input and button styling */
+input#cityInput {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* Styling for the weather app toggle button */
+#weatherAppButton {
+    background-color: #3498db;
+    /* Change the background color */
+    color: white;
+    /* Change the text color */
+    border: none;
+    /* Remove any border */
+    padding: 10px 20px;
+    /* Adjust padding for better spacing */
+    font-size: 16px;
+    /* Adjust font size */
+    cursor: pointer;
+    /* Change the cursor to pointer when hovering */
+    border-radius: 5px;
+    /* Add rounded corners to the button */
+    transition: background-color 0.3s ease;
+    /* Add transition effect */
+}
+
+/* Styling for weather output area */
+#weatherOutput {
+    font-size: 16px;
+}
+
+/* Transition effect for the map */
+#mapImage {
+    width: 100%;
+    height: 100%;
+}
+
+/* Header: Make it larger and change color */
+header {
+    background-color: skyblue;
+    padding: 10px 0;
+}
+
+.navbar-brand {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.navbar .nav-link {
+    font-size: 1.3rem;
+    color: #f8f9fa;
+}
+
+.navbar .nav-link:hover {
+    color: #ffc107;
+}
+
+/* General Navbar Styling */
+.navbar {
+    transition: background-color 0.3s, box-shadow 0.3s;
+    background-color: skyblue;
+}
+
+/* Active link styling */
+.navbar .nav-link.active {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* Sticky Navbar Effect */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1020;
+    background-color: skyblue;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Spacing for Anchored Sections */
+section {
+    scroll-margin-top: 80px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Hero Section Styling */
+.hero {
+    text-align: center;
+    margin-bottom: 50px;
+    /* Default margin to separate sections */
+    display: flex;
+    justify-content: center;
+    /* Centers the hero content */
+    align-items: center;
+    /* Ensures content is vertically centered */
+    flex-direction: column;
+    position: relative;
+    /* Keeps it in the normal flow */
+    z-index: 0;
+    /* Ensures the hero doesn't overlap other sections */
+}
+
+.hero-img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    /* Space below the hero image */
+    border-radius: 15px;
+}
+
+/* Container spacing */
+.container {
+    margin-top: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: skyblue;
+    /* Same color as header */
+    padding: 20px 0;
+    /* Match the header's padding */
+    text-align: center;
+    /* Center align the text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1.2rem;
+    /* Adjust the font size to match the header text */
+    color: #fff;
+    /* White text color for contrast */
+    margin-bottom: 0;
+    /* Remove default bottom margin */
+}
+
+#social-networks {
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 140%;
+    padding: 3%;
+    color: #fff;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 1024px) {
+    .hero {
+        height: auto;
+        /* Let the hero section adapt to its content height */
+        margin-bottom: 20px;
+        /* Reduce the gap between the hero and next section */
+    }
+
+    /* Adjust container margin to avoid content overlap */
+    .container {
+        margin-top: 20px;
+    }
+
+    /* Make sure the header is not covered by the hero */
+    header {
+        position: relative;
+        z-index: 1;
+        /* Bring header above hero */
+    }
+
+    .hero-img {
+        margin-bottom: 15px;
+        /* Adjust space below the hero image */
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        height: auto;
+        /* Let the hero section take the height of its content */
+        margin-bottom: 20px;
+        /* Ensure a smaller gap between sections */
+    }
+
+    .hero-img {
+        margin-bottom: 15px;
+        /* Adjust space below the hero image */
+    }
+
+    /* Adjust container margin for smaller screens */
+    .container {
+        margin-top: 15px;
+    }
+}
