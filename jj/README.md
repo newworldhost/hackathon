@@ -16,7 +16,8 @@ Welcome to Word Scramble! This project is a fun and interactive word game where 
 1. **index.html**: The main HTML file containing the structure of the game.
 2. **style.css**: The stylesheet for custom styling of the game.
 3. **script.js**: The JavaScript file containing the game logic.
-
+## wireframe 
+![wireframe](https://i.postimg.cc/sXNL8RHg/wireframe3.png)
 ## Getting Started
 
 To get started with the Word Scramble game, follow these steps:
