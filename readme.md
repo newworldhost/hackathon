@@ -89,6 +89,9 @@ index.html
 
 © Group Projects. All rights reserved.
 
+## wireframe
+![wireframe](https://i.postimg.cc/CKkh4mct/wireframe-main.png)
+
 ## Acknowledgments
 
 Thanks to the creators of Bootstrap, Font Awesome, and any other libraries or tools used in these projects.
