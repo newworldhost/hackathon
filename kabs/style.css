@@ -1,0 +1,168 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.containerToDo {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e66465, #9198e5);
+    padding: 10px;
+}
+
+.toDoList {
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds depth */
+}
+
+.toDoList h2 {
+    color: rgb(104, 97, 97);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px; /* Increased for better visibility */
+}
+
+.ToDoListRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(208, 202, 202);
+    border-radius: 30px;
+    padding-left: 20px;
+    gap: 10px; /* Adds spacing between the input and button */
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-size: 14px; /* Corrected property */
+    color: #333; /* Ensures text is visible */
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 16px 20px; /* Reduced width for better responsiveness */
+    background: #1bcd36;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth animations */
+}
+
+button:hover {
+    background: #17a82d;
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+button:focus {
+    outline: 2px solid #17a82d; /* Accessibility focus outline */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .toDoList {
+        margin: 50px auto 20px;
+        padding: 20px;
+    }
+
+    button {
+        padding: 14px 15px;
+        font-size: 14px;
+    }
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(240, 240, 240);
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 50px; /* Ensure consistent height */
+}
+
+.task-item span {
+    flex: 1; /* Take up the available space */
+    margin-right: 10px; /* Add space between text and buttons */
+}
+
+.complete-btn, .delete-btn {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px; /* Add spacing between buttons */
+}
+
+.complete-btn {
+    background: #1bcd36;
+    color: white;
+}
+
+.delete-btn {
+    background: #e66465;
+    color: white;
+}
+
+.complete-btn:hover {
+    background: #17a82d;
+}
+
+.delete-btn:hover {
+    background: #d35050;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+
+  .footer p {
+    margin: 10px 0 0;
+    font-size: 14px;
+  }
+
+  .header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header h1 {
+    margin: 0;
+    font-size: 2rem;
+  }
+
+  @media (max-width: 600px) {
+    .header h1 {
+      font-size: 1.5rem;
+    }
+  }
+
