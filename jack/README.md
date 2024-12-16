@@ -1,6 +1,7 @@
 # K&JJJ Weather App
 
-![image](https://github.com/user-attachments/assets/ef7905be-f02f-4aed-bdaa-aa3040881851)
+![rmintro](https://github.com/user-attachments/assets/4bc5a16c-f96b-4069-a1c6-008bb0b66ec6)
+
 
 
 This Weather App allows users to easily view current weather conditions based on either their **city** or **current location**. The app provides detailed weather information such as temperature, humidity, wind speed, and more. It also integrates an **interactive map** to visualize the selected location.
@@ -87,20 +88,22 @@ This Weather App allows users to easily view current weather conditions based on
 
 ## Wireframe
 Below displays the basic wireframe that justifies the content structure and implementation of my weather app.
-![New Wireframe 1](https://github.com/user-attachments/assets/010d7555-6901-4f3b-8096-fb3885e3b8b7) ![New Wireframe 2](https://github.com/user-attachments/assets/b3a66600-022a-4a82-a629-8f50a5de2364)
+![remwf1](https://github.com/user-attachments/assets/65c8a224-19f7-483f-b883-a9a867d96c57) ![rmwf2](https://github.com/user-attachments/assets/d87c433b-948f-45d7-ba60-570f40338a59)
+
 
 
 
 ## Features
 
 ### 1. **Weather Information by City or Current Location**
-![image](https://github.com/user-attachments/assets/f2564a75-bc8c-4173-9444-9581093ec6af)
+![app search bar](https://github.com/user-attachments/assets/87c583c1-f44b-4bf0-ba3c-14d0d8b272bf)
+
 
    - **City Weather**: Users can search for weather information by entering the name of a city.
    - **Current Location Weather**: Users can get weather data based on their current geographic location using the browser's geolocation API.
 
 ### 2. **Comprehensive Weather Data**
-![image](https://github.com/user-attachments/assets/8e5d3514-99c6-446c-b10e-b59d73f6adeb)
+![weatherinfo](https://github.com/user-attachments/assets/5aa8b692-f579-48ad-881c-9b17bd621c83)
 
    Once the weather data is fetched, the app provides:
    - **Temperature** (in Celsius)
@@ -114,14 +117,12 @@ Below displays the basic wireframe that justifies the content structure and impl
    - **Sunrise and Sunset Times**: Local time of sunrise and sunset based on the location.
 
 ### 3. **Weather Condition Icons**
-![image](https://github.com/user-attachments/assets/dc271bc1-1acd-4c09-be3d-9a1202dc4112) ![image](https://github.com/user-attachments/assets/bb2fa04f-fa8d-4262-8348-d38f3c8f9ce0) ![image](https://github.com/user-attachments/assets/588b57bc-e3f9-48fd-b70b-a932a2f9d9ce)
+![waethericons](https://github.com/user-attachments/assets/42bbad16-89ab-4707-a5f5-9a353f36ebf0)
 
-
-
-   The app uses icons from the OpenWeather API to visually represent the current weather condition (e.g., clear skies, rain, snow, etc.).
+ The app uses icons from the OpenWeather API to visually represent the current weather condition (e.g., clear skies, rain, snow, etc.).
 
 ### 4. **Weather Condition-Based Styling**
-![image](https://github.com/user-attachments/assets/aee9dc3b-4406-465b-8532-72a16cad7add) ![image](https://github.com/user-attachments/assets/af9046c6-a000-4e4c-baa9-63ecc70bd9db)
+![conditionalstyling](https://github.com/user-attachments/assets/42691022-7ed0-4166-bded-b93c3f671dee)
 
 
    The app dynamically changes its background colors based on the weather conditions:
@@ -131,19 +132,19 @@ Below displays the basic wireframe that justifies the content structure and impl
    - **Snowy**: A cool, snowy background.
 
 ### 5. **Interactive Google Map**
-![image](https://github.com/user-attachments/assets/9a652e53-f7f7-4444-9e6b-a8a10f2c8709)
+![map](https://github.com/user-attachments/assets/bba703b0-9181-4af4-b7e8-4dba0e636390)
 
    - The app includes an interactive **Google Map** that pinpoints the exact location on the map based on the coordinates obtained from the weather data.
    - The map allows users to visually explore the location where the weather data was fetched.
 
 ### 6. **Responsive and User-Friendly Design**
-![image](https://github.com/user-attachments/assets/56447d43-9f4e-4580-a433-07f4dec8ece2)
+![responsive](https://github.com/user-attachments/assets/421390ea-b7f3-45f9-a197-c55f8cec13b4)
 
    - The layout is designed to be fully responsive, providing a smooth user experience on both **desktop** and **mobile** devices.
    - The weather information is presented in a clean, visually appealing format, ensuring easy readability.
 
 ### 7. **Toggle Visibility of the Weather App**
- ![image](https://github.com/user-attachments/assets/e8c3299a-7be7-4e9d-afc2-f6aec42600c7)
+ ![apptoggle](https://github.com/user-attachments/assets/bafbbad0-39a9-4806-95f4-453b7d3f998e)
 
    - Users can toggle the visibility of the weather app using a **button** in the on the page, which hides or shows the entire weather app section.
 
