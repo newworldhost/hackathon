@@ -22,7 +22,7 @@ Welcome to our group projects repository! This repository contains three excitin
 - script.js: The JavaScript file containing the game logic.
 
 ## running site
-[word-scramble][https://www.google.com](https://newworldhost.github.io/hackathon/jj/index.html))
+[word-scramble](https://newworldhost.github.io/hackathon/jj/index.html)
 
 ### 2. To-Do List
 
