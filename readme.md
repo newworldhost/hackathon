@@ -21,6 +21,9 @@ Welcome to our group projects repository! This repository contains three excitin
 - style.css: The stylesheet for custom styling of the game.
 - script.js: The JavaScript file containing the game logic.
 
+## running site
+[word-scramble]([https://www.google.com](https://newworldhost.github.io/hackathon/jj/index.html))
+
 ### 2. To-Do List
 
 **Description**: The To-Do List is a simple and efficient application that helps users manage their tasks. Users can add, delete, and mark tasks as completed.
@@ -36,6 +39,8 @@ Welcome to our group projects repository! This repository contains three excitin
 - style.css: The stylesheet for custom styling of the application.
 - script.js: The JavaScript file containing the application logic.
 
+[todo list](https://newworldhost.github.io/hackathon/kabs/index.html)
+
 ### 3. Weather App
 
 **Description**: The Weather App is a simple application that provides weather information for a specified location. Users can enter a city name to get the current weather details.
@@ -49,6 +54,7 @@ Welcome to our group projects repository! This repository contains three excitin
 - index.html: The main HTML file containing the structure of the application.
 - style.css: The stylesheet for custom styling of the application.
 - script.js: The JavaScript file containing the application logic.
+  [weather app](https://newworldhost.github.io/hackathon/jack/index.html)
 
 ## Getting Started
 
