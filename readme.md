@@ -40,7 +40,7 @@ Welcome to our group projects repository! This repository contains three excitin
 - script.js: The JavaScript file containing the application logic.
 
   
-##running site
+## running site
 [todo list](https://newworldhost.github.io/hackathon/kabs/index.html)
 
 ### 3. Weather App
@@ -58,7 +58,7 @@ Welcome to our group projects repository! This repository contains three excitin
 - script.js: The JavaScript file containing the application logic.
 
   
-  ##running site
+  ## running site
   [weather app](https://newworldhost.github.io/hackathon/jack/index.html)
 
 ## Getting Started
