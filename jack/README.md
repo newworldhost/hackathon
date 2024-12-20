@@ -6,92 +6,9 @@
 
 This Weather App allows users to easily view current weather conditions based on either their **city** or **current location**. The app provides detailed weather information such as temperature, humidity, wind speed, and more. It also integrates an **interactive map** to visualize the selected location.
 
-## User Stories
-
-### **User Story 1: Search Weather by City**
-
-**As a** user,  
-**I want to** be able to search for weather by city name,  
-**so that** I can see the current weather conditions for a specific location.
-
-#### **Acceptance Criteria:**
-- The user can enter a city name in a text input field.
-- The user can click a "Get Weather" button to fetch the weather.
-- After submitting, the current weather conditions (temperature, humidity, wind speed, etc.) should be displayed.
-- An error message is shown if the city is invalid or not found.
-
-#### **Tasks:**
-- [x] Create an input field for the user to enter the city name.
-- [x] Add a button to trigger the weather search.
-- [x] Fetch weather data from the OpenWeather API using the city name.
-- [x] Display the fetched weather information (temperature, conditions, humidity, etc.).
-- [x] Handle error cases for invalid or non-existent cities (e.g., "City not found" message).
-
----
-
-### **User Story 2: Display Current Location Weather**
-
-**As a** user,  
-**I want to** view the weather based on my current location,  
-**so that** I don’t have to manually enter a city name.
-
-#### **Acceptance Criteria:**
-- The user can click a "Get Current Location Weather" button.
-- The app fetches the current weather based on the user's geolocation.
-- The weather report is displayed with the same details as the city search (temperature, conditions, humidity, etc.).
-- An error message is shown if geolocation is not supported or the user denies location access.
-
-#### **Tasks:**
-- [x] Add a button to get the current location weather.
-- [x] Use the browser's geolocation API to get the user's current latitude and longitude.
-- [x] Fetch the weather data for the user's location from the OpenWeather API.
-- [x] Display the weather data for the user's current location.
-- [x] Handle errors related to geolocation permissions or unsupported browsers.
-
----
-
-### **User Story 3: Display Interactive Map**
-
-**As a** user,  
-**I want to** see an interactive map showing the location of the weather report,  
-**so that** I can visually locate where the weather is being reported.
-
-#### **Acceptance Criteria:**
-- The map should be shown after weather data is fetched.
-- The map should be centered on the location for which the weather is reported.
-- A marker should be placed on the map to indicate the location.
-
-#### **Tasks:**
-- [x] Integrate Google Maps or another mapping service into the page.
-- [x] Center the map on the location (city or user's current location) after fetching weather data.
-- [x] Add a marker to the map showing the location.
-- [x] Ensure the map is responsive and fits within the layout.
-
----
-
-### **User Story 4: Show Weather Details with a Visual Indicator**
-
-**As a** user,  
-**I want to** see the weather displayed with visual indicators (icons or background colors),  
-**so that** I can quickly identify the weather conditions.
-
-#### **Acceptance Criteria:**
-- Weather conditions should be accompanied by an appropriate icon (e.g., sun for clear weather, clouds for cloudy weather, etc.).
-- The background or card containing the weather should have a color theme based on the weather type (e.g., sunny = yellow, rainy = blue).
-- The temperature should be prominently displayed.
-
-#### **Tasks:**
-- [x] Add weather icons to the report (e.g., sun, cloud, rain, snow).
-- [x] Change the background color of the weather card depending on the weather condition (e.g., light yellow for sunny).
-- [x] Style the temperature text to make it prominent.
-- [x] Ensure that the icons and backgrounds are responsive and adjust to different screen sizes.
-
 ## Wireframe
 Below displays the basic wireframe that justifies the content structure and implementation of my weather app.
 ![remwf1](https://github.com/user-attachments/assets/65c8a224-19f7-483f-b883-a9a867d96c57) ![rmwf2](https://github.com/user-attachments/assets/d87c433b-948f-45d7-ba60-570f40338a59)
-
-
-
 
 ## Features
 
