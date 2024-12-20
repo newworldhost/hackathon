@@ -1,5 +1,3 @@
-Collecting workspace information
-
 # Group Projects
 
 ## Introduction
