@@ -38,6 +38,8 @@ Welcome to our group projects repository! This repository contains three excitin
 - index.html: The main HTML file containing the structure of the application.
 - style.css: The stylesheet for custom styling of the application.
 - script.js: The JavaScript file containing the application logic.
+
+  
 ##running site
 [todo list](https://newworldhost.github.io/hackathon/kabs/index.html)
 
@@ -54,6 +56,8 @@ Welcome to our group projects repository! This repository contains three excitin
 - index.html: The main HTML file containing the structure of the application.
 - style.css: The stylesheet for custom styling of the application.
 - script.js: The JavaScript file containing the application logic.
+
+  
   ##running site
   [weather app](https://newworldhost.github.io/hackathon/jack/index.html)
 
