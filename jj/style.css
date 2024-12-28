@@ -5,7 +5,7 @@
     #result { 
     margin-top: 15px;
     } 
-    h1, h2 { 
+    h1, h2, p { 
     text-align: center;
      padding: 5px;
      color:white;
@@ -66,4 +66,11 @@
 button:hover {
     background-color: rgb(7, 7, 7);
     color: white;
+}
+.words-list {
+    max-height: 200px; /* Adjust the height as needed */
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
 }
