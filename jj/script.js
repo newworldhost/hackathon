@@ -27,9 +27,9 @@ function loadGame() {
 
 // Function to add a new word
 function addWord() {
-    const newWord = document.getElementById('new-word-input').value.trim();
-    const isValidWord = /^[a-zA-Z]+$/.test(newWord) && !/(.).*?\1{2}/.test(newWord) && !/(.).*?\1{3}/.test(newWord); // Check if the word contains only letters and no more than three repeated characters
-    if (newWord && isValidWord) {
+    const newWord = document.getElementById('new-word-input').value.trim().toLowerCase();
+    const dictionary = new Set(defaultWords.map(word => word.toLowerCase())); // Create a set of default words for quick lookup
+    if (dictionary.has(newWord)) {
         if (!words.includes(newWord)) {
             words.push(newWord);
             localStorage.setItem('words', JSON.stringify(words)); // Save updated words array to local storage
@@ -42,7 +42,7 @@ function addWord() {
             document.getElementById('add-word-result').textContent = 'Word already exists';
         }
     } else {
-        document.getElementById('add-word-result').textContent = 'Please enter a valid word containing only letters';
+        document.getElementById('add-word-result').textContent = 'Word not in dictionary';
     }
     console.log(words);
 }
