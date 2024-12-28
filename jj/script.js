@@ -54,6 +54,21 @@ document.getElementById('new-word-input').addEventListener('keydown', function(e
     }
 });
 
+// Function to view words
+function viewWords() {
+    const wordsList = document.getElementById('words-list');
+    wordsList.innerHTML = ''; // Clear the list before displaying
+    words.forEach(word => {
+        const wordItem = document.createElement('p');
+        wordItem.textContent = word;
+        wordsList.appendChild(wordItem);
+    });
+}
+
+
+//load the first scrambled word when the page loads
+window.onload = loadGame();
+
 
 
 /**
