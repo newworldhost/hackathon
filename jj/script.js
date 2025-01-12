@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+/* jshint esversion: 6 */
 // Declare the words array with 10 default words and load from local storage if available
 let defaultWords = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'grape', 'honeydew', 'kiwi', 'lemon'];
 let words = JSON.parse(localStorage.getItem('words')) || defaultWords;
@@ -8,46 +8,43 @@ let timer;
 let timeLimit = 60;
 let score = 0;
 let isPlaying = false;
+
 /**
  * This function is for the timer 
- */ 
  */
-
 function startTimer() {
     let timeRemaining = timeLimit;
-    timer = SetInterval()) = > {
-        if (TimeRemaining > 0) {
+    timer = setInterval(() => {
+        if (timeRemaining > 0) {
             timeRemaining--;
-            document.getElementById('timer').textContent.innerText= `Time Remaining ${timeRemaining}s`;
+            document.getElementById('timer').textContent = `Time Remaining ${timeRemaining}s`;
         } else {
             clearInterval(timer);
             checkWords();
-        
         }
-     }, 2000); //delays the timer by 2 seconds
-    }
+    }, 1000); // Set the timer interval to 1 second
+}
+
 /**
-* this function shuffles the words up
+* This function shuffles the words up
 */
 function shuffle(word) {
-	return word.split('').sort(() => Math.random() - 0.5).join('');
+    return word.split('').sort(() => Math.random() - 0.5).join('');
 }
+
 /**
-* this function loads the word game
+* This function loads the word game
 */
 function loadGame() {
-	currentWord = words[Math.floor(Math.random() * words.length)];
-	scrambledWord = shuffle(currentWord);
-	console.log(scrambledWord)
-	document.getElementById('scrambled-word').textContent = scrambledWord;
+    currentWord = words[Math.floor(Math.random() * words.length)];
+    scrambledWord = shuffle(currentWord);
+    console.log(scrambledWord)
+    document.getElementById('scrambled-word').textContent = scrambledWord;
 }
 
-
 /**
-* this function is for users to add a new word tothe array
+* Function to add a new word
 */
-
-// Function to add a new word
 function addWord() {
     const newWord = document.getElementById('new-word-input').value.trim();
     const isValidWord = /^[a-zA-Z]+$/.test(newWord) && !/(.).*?\1{2}/.test(newWord) && !/(.).*?\1{3}/.test(newWord); // Check if the word contains only letters and no more than three repeated characters
@@ -87,22 +84,18 @@ function viewWords() {
     });
 }
 
+// Load the first scrambled word when the page loads
+window.onload = loadGame;
 
-//load the first scrambled word when the page loads
-window.onload = loadGame();
-
-
-
-/**
- * this is so the user can press enter to submit a guess
- */
+// This is so the user can press enter to submit a guess
 document.getElementById('guess-input').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
         checkGuess();
     }
 });
+
 /**
-* this function is checking if the guess is the correct word
+* This function checks if the guess is the correct word
 */
 function checkGuess() {
     const guess = document.getElementById('guess-input').value;
@@ -112,22 +105,6 @@ function checkGuess() {
             document.getElementById('result').textContent = '';
         }, 2000); // Clear the message after 2 seconds
         loadGame(); // Load a new word when the guess is correct
-        } else {
+    } else {
         document.getElementById('result').textContent = 'Try Again';
         setTimeout(() => {
-            document.getElementById('result').textContent = '';
-        }, 2000); // Clear the message after 2 seconds
-    }
-    document.getElementById('guess-input').value = ''; // Clear the input field
-}
-// Ensure the game loads when the DOM content is fully loaded
-document.addEventListener('DOMContentLoaded', loadGame);
-
-function startTimer() {
-    clearInterval(timerInterval);
-    startTime = Date.now();
-    timerInterval = setInterval(() => {
-        const elapsedTime = Math.floor((Date.now() - startTime) / 1000);
-        document.getElementById('timer').textContent = `Time: ${elapsedTime}s`;
-    }, 1000);
-}
