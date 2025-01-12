@@ -4,6 +4,28 @@ let defaultWords = ['apple', 'banana', 'cherry', 'date', 'elderberry', 'fig', 'g
 let words = JSON.parse(localStorage.getItem('words')) || defaultWords;
 let currentWord;
 let scrambledWord;
+let timer;
+let timeLimit = 60;
+let score = 0;
+let isPlaying = false;
+/**
+ * This function is for the timer 
+ */ 
+ */
+
+function startTimer() {
+    let timeRemaining = timeLimit;
+    timer = SetInterval()) = > {
+        if (TimeRemaining > 0) {
+            timeRemaining--;
+            document.getElementById('timer').textContent.innerText= `Time Remaining ${timerRemaining}s`;
+        } else {
+            clearInterval(timer);
+            checkWords();
+        
+        }
+     }, 2000); //delays the timer by 2 seconds
+    }
 /**
 * this function shuffles the words up
 */
