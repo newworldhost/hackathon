@@ -18,7 +18,7 @@ function startTimer() {
     timer = SetInterval()) = > {
         if (TimeRemaining > 0) {
             timeRemaining--;
-            document.getElementById('timer').textContent.innerText= `Time Remaining ${timerRemaining}s`;
+            document.getElementById('timer').textContent.innerText= `Time Remaining ${timeRemaining}s`;
         } else {
             clearInterval(timer);
             checkWords();
