@@ -101,4 +101,11 @@ function checkGuess() {
 // Ensure the game loads when the DOM content is fully loaded
 document.addEventListener('DOMContentLoaded', loadGame);
 
-
+function startTimer() {
+    clearInterval(timerInterval);
+    startTime = Date.now();
+    timerInterval = setInterval(() => {
+        const elapsedTime = Math.floor((Date.now() - startTime) / 1000);
+        document.getElementById('timer').textContent = `Time: ${elapsedTime}s`;
+    }, 1000);
+}
